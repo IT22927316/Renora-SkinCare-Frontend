@@ -1,0 +1,47 @@
+  .banner .swiper {
+    width: 700px;
+    height: 450px;
+  }
+
+  .banner .swiper-slide {
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+  .banner .swiper-slide:nth-child(1n) {
+    background-image: url('src/assets/banner/img1.jpg');
+  }
+  
+  .banner .swiper-slide:nth-child(2n) {
+    background-image: url('src/assets/banner/img2.jpg');
+  }
+  
+  .banner .swiper-slide:nth-child(3n) {
+    background-image: url('src/assets/banner/img3.jpg');
+  }
+  
+  .banner .swiper-slide:nth-child(4n) {
+    background-image: url('src/assets/banner/img4.jpg');
+  }
+  
+  .banner .swiper-slide:nth-child(5n) {
+    background-image: url('src/assets/banner/img5.jpg');
+  }
+  
+  .banner .swiper-slide:nth-child(6n) {
+    background-image: url('src/assets/banner/img6.jpg');
+  }
+  
+  .banner .swiper-slide:nth-child(7n) {
+    background-image: url('src/assets/banner/img7.jpg');
+  }
+  
+  .banner .swiper-slide:nth-child(8n) {
+    background-image: url('src/assets/banner/img8.jpg');
+  }
+  
+  .banner .swiper-slide:nth-child(9n) {
+    background-image: url('src/assets/banner/img9.jpg');
+  }
+

@@ -1,0 +1,79 @@
+.automated-slider {
+    width: 100%;
+    --gap: 30px; 
+    height: 100%;
+    overflow: hidden; 
+    position: relative; /* Add this to use pseudo-elements for gradient overlays */
+}
+
+.automated-slider .list {
+    display: flex;
+    width: calc(var(--width) * 2); 
+    position: relative;
+    animation: autoRun 50s linear infinite;
+    animation-play-state: running;
+}
+
+.automated-slider .list .item {
+    width: 250px; 
+    height: 100%;
+    object-fit: cover;
+    position: relative; 
+    flex-shrink: 0; 
+    margin-right: var(--gap); 
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth effect for transition */
+}
+
+/* Hover effect to make the middle item larger */
+.automated-slider:hover .list .item {
+    opacity: 0.5; /* Make all items a bit transparent */
+}
+
+.automated-slider .list .item:hover {
+    transform: scale(1.1); /* Scale the middle item on hover */
+    opacity: 1; /* Make the hovered item fully visible */
+}
+
+.automated-slider .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.automated-slider::before, .automated-slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 15%; 
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+@keyframes autoRun {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - var(--gap))); 
+    }
+}
+
+.automated-slider:hover .list {
+    animation-play-state: paused !important;
+}
+
+
+/* -----transparent background code ---
+.automated-slider::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.automated-slider::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+*/
