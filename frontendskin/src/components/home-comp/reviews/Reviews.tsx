@@ -13,7 +13,7 @@ const Reviews :React.FC= () => {
             {/* left side */}
             <div className='md:w-1/2 space-y-8 h-full py-40'>
                 
-                <h2 className='text-4xl font-bold leading-snug text-black'>What Our Customers Said About Us!</h2>
+                <h2 className='text-4xl font-bold leading-snug text-pink-600'>What Our Customers Said About Us!</h2>
                 <Title text1={'CUSTOMER'} text2={' REVIEWS'}/>
                 <p className='md:w-23/24'>At Renora, we believe our customers’ voices matter. Our Customer Reviews section is a
                  space where real people share their honest experiences, insights, and feedback on our products. Whether you’re looking 
