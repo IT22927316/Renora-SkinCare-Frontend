@@ -6,6 +6,8 @@ import Footer from "./components/semi/Footer";
 import Navbar from "./components/semi/Navbar";
 import About from "./pages/common/Aboutus";
 import ContactUs from "./pages/common/ContactUs";
+import MainReviews from "./pages/reviews/MainReviews";
+import MainFAQ from "./pages/faq/MainFAQ";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +18,10 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contactus" element={<ContactUs />} />
+
+            <Route path="/reviews" element={<MainReviews />} />
+
+            <Route path="/faqs" element={<MainFAQ />} /> 
           </Routes>
         <Footer />
       </div>

@@ -5,6 +5,7 @@ import Category from '../../components/home-comp/Category';
 import AboutSimple from '../../components/home-comp/AboutSimple';
 import Reviews from '../../components/home-comp/reviews/Reviews';
 import NewsLetter from '../../components/semi/NewsLetter';
+import Complaints from '../../components/home-comp/Complaints';
 
 const Home: React.FC = () => {
   return (
@@ -43,6 +44,15 @@ const Home: React.FC = () => {
         viewport={{ once: true }}
       >
         <Reviews />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <Complaints />
       </motion.div>
 
       <motion.div
