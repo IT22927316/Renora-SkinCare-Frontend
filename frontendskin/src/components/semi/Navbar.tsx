@@ -8,9 +8,10 @@ import carticon from "../../assets/icons/carticon.png";
 import { FaBars, FaTimes } from "react-icons/fa"; 
 
 const Navbar: React.FC = () => {
+  
   const [isLogged, setIsLogged] = useState<boolean>(false);
-  const [signup, setSignup] = useState<boolean>(false);
-  const [login, setLogin] = useState<boolean>(false);
+  //const [signup, setSignup] = useState<boolean>(false);
+  //const [login, setLogin] = useState<boolean>(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false); 
   const [isUserDropdownOpen, setUserDropdownOpen] = useState<boolean>(false); 
 
@@ -20,12 +21,12 @@ const Navbar: React.FC = () => {
   }, []);
 
   const toggleSignup = () => {
-    setSignup((prev) => !prev);
+    //setSignup((prev) => !prev);
     setUserDropdownOpen(false); 
   };
 
   const toggleLogin = () => {
-    setLogin((prev) => !prev);
+    //setLogin((prev) => !prev);
     setUserDropdownOpen(false); 
   };
 

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react'
 import TouchPause from '../animations/TouchPause';
 import { motion } from "framer-motion";
 
